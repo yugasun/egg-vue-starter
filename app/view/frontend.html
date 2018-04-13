@@ -1,0 +1,162 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><title>开工红包没领够，PIPA佳再来撒壕币</title><script>(function (doc, win) {
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          docEl.style.fontSize = clientWidth / 10 + 'px';
+        };
+      recalc();
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+    })(document, window);</script><style>/* 加载 */
+    *{ margin:0; padding:0; border:0;}
+    .loading_background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #e24445;
+      z-index: 9;
+    }
+
+    .loading_icon {
+      width: 0.94rem;
+      position: absolute;
+      left: 0;
+      top: -0.35rem;
+    }
+
+    .loading_pic {
+      overflow: hidden;
+      width: 2rem;
+      position: absolute;
+      top: 6.5rem;
+      left: 4rem;
+    }
+
+    .loading_text {
+      position: absolute;
+      color: #fff;
+      top: 9rem;
+      font-size: 0.5rem;
+      text-align: center;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    .loading_tiao1 {
+      width: 4.88rem;
+      height: 0.49rem;
+      position: absolute;
+      top: 8rem;
+      left: 2.52rem;
+      border: 1px solid #d11824;
+      background: none;
+    }
+
+    .loading_tiao2 {
+      overflow: hidden;
+      width: 0;
+      transition: all .3s ease-in-out;
+      height: 0.49rem;
+      background: #d11824;
+      animation: loading 3s .5s ease-out forwards;
+    }
+
+    @keyframes loading {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }</style><link href=/public/frontend/css/app.b6f66dc44404e57e6da0e3befd3da9db.css rel=stylesheet></head><body><div id=app><div id=loading class=loading_background><div class=loading_text id=loadertxt>加载中...</div><div class=loading_tiao1><div class=loading_tiao2></div></div></div></div><div id=orientLayer class=mod-orient-layer><div class=mod-orient-layer__content><i class="icon mod-orient-layer__icon-orient"></i><div class=mod-orient-layer__desc>为了更好的体验，请使用竖屏浏览</div></div></div><style type=text/css>/* 样式放在结尾，防止 base64 图片造成拥塞 */
+
+    @-webkit-keyframes rotation {
+      10% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+      }
+      50%,
+      60% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      }
+      90% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+      }
+    }
+
+    @keyframes rotation {
+      10% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+      }
+      50%,
+      60% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+      }
+      90% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+      }
+    }
+
+    #orientLayer {
+      display: none;
+    }
+
+    @media screen and (min-aspect-ratio: 13/9) {
+      #orientLayer {
+        display: block;
+      }
+    }
+
+    .mod-orient-layer {
+      display: none;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      z-index: 99999;
+    }
+
+    .mod-orient-layer__content {
+      position: absolute;
+      width: 100%;
+      top: 45%;
+      margin-top: -75px;
+      text-align: center;
+    }
+
+    .mod-orient-layer__icon-orient {
+      background-image: url(/public/frontend/images/shuping.png);
+      display: inline-block;
+      width: 67px;
+      height: 109px;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -webkit-animation: rotation infinite 1.5s ease-in-out;
+      animation: rotation infinite 1.5s ease-in-out;
+      -webkit-background-size: 67px;
+      background-size: 67px;
+    }
+
+    .mod-orient-layer__desc {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #fff;
+    }</style><script type=text/javascript src=/public/frontend/js/manifest.c3743d4537086332ee07.js></script><script type=text/javascript src=/public/frontend/js/vendor.a6e80efa052d47856eed.js></script><script type=text/javascript src=/public/frontend/js/app.cb3f9751567e061e70ec.js></script></body></html>

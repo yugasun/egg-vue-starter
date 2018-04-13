@@ -16,5 +16,28 @@ module.exports = appInfo => {
     },
   };
 
+  // 数据库配置
+  config.sequelize = {
+    dialect: 'mysql',
+    database: 'eggjs-db',
+    host: 'localhost',
+    port: '3306',
+    username: 'root',
+    password: '',
+  };
+
+  config.security = {
+    csrf: false,
+    // 为了本地前台和后台开发调试使用
+    domainWhiteList: [ 'http://localhost:8080', 'http://localhost:8081' ],
+  };
+
+  config.session = {
+    key: 'EGG_SESS',
+    maxAge: 24 * 3600 * 1000, // 1 天
+    httpOnly: true,
+    encrypt: true,
+  };
+
   return config;
 };

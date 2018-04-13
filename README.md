@@ -23,7 +23,7 @@ $ npm start
 $ npm stop
 ```
 
-### Deploy Frontend 
+### Deploy Client 
 
 ```bash
 $ npm run build-fe

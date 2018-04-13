@@ -5,8 +5,15 @@
   "private": true,
   "dependencies": {
     "egg": "^2.0.0",
+    "egg-cors": "^2.0.0",
+    "egg-jsonp": "^2.0.0",
     "egg-scripts": "^2.1.0",
-    "egg-view-nunjucks": "^2.1.4"
+    "egg-sequelize": "^3.1.1",
+    "egg-view-nunjucks": "^2.1.4",
+    "moment": "^2.20.1",
+    "mysql2": "^1.5.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -22,6 +29,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
+    "restart": "npm run stop && npm run start",
     "start": "egg-scripts start --daemon",
     "stop": "egg-scripts stop",
     "dev": "egg-bin dev",
@@ -32,7 +40,12 @@
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
     "autod": "autod",
-    "deploy-fe": "./deploy-fe.sh"
+    "build:all": "npm run build:client && npm run build:admin",
+    "build:client": "export MODULE_NAME=client && ./build.sh",
+    "build:admin": "export MODULE_NAME=admin && ./build.sh",
+    "migrate:new": "egg-sequelize migration:create",
+    "migrate:up": "egg-sequelize db:migrate",
+    "migrate:down": "egg-sequelize db:migrate:undo"
   },
   "ci": {
     "version": "8"
